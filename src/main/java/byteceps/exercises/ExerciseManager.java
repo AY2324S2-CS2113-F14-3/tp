@@ -1,11 +1,10 @@
 package byteceps.exercises;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ExerciseManager {
     private static ExerciseManager instance;
-    private final List<Exercise> exercises;
+    private final ArrayList<Exercise> exercises;
 
     public ExerciseManager() {
         this.exercises = new ArrayList<>();
@@ -32,7 +31,7 @@ public class ExerciseManager {
         }
     }
 
-    public List<Exercise> getAllExercises() {
+    public ArrayList<Exercise> getAllExercises() {
         return new ArrayList<>(exercises);
     }
 }

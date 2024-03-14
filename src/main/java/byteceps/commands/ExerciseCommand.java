@@ -1,7 +1,6 @@
 package byteceps.commands;
 
 import java.util.ArrayList;
-import java.util.List;
 import byteceps.exercises.Exercise;
 import byteceps.exercises.ExerciseManager;
 
@@ -55,7 +54,7 @@ public class ExerciseCommand extends Command {
     }
 
     public void listExercises() {
-        List<Exercise> exercises = exerciseManager.getAllExercises();
+        ArrayList<Exercise> exercises = exerciseManager.getAllExercises();
         if (exercises.isEmpty()) {
             System.out.println("No exercises found.");
         } else {
